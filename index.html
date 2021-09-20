@@ -1,1 +1,174 @@
-Hello World
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!--TAB CONTENT-->
+	<script>
+	function openSection(evt, sectionName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(sectionName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	</script>
+	<style type="text/css">
+		/*Override Jumbotron*/
+		.jumbotron {
+			-webkit-background-size: 100% 100%;
+		    -moz-background-size: 100% 100%;
+		    -o-background-size: 100% 100%;
+		    background-size: 100% 100%;
+			height: 100%;
+		}
+
+		/*Style the avatar*/
+		.avatar {
+		  vertical-align: middle;
+		  width: 60px;
+		  height: 60px;
+		  border-radius: 50%;
+		}
+		/* Style the buttons inside the tab */
+		.tab button {
+		  float: left;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+		  padding: 14px 16px;
+		  transition: 0.3s;
+		  font-size: 17px;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		  background-color: #ff9696;
+		}
+
+		/* Create an active/current tablink class */
+		.tab button.active {
+		  background-color: #ccc;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+		  display: none;
+		  padding: 6px 12px;
+		  border: 1px solid #ccc;
+		  border-top: none;
+		}
+	</style>
+	<link rel="icon" href="images/tenshigushio.png" type="image/gif">
+	<title>Welcome to my Blog!</title>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm">
+			<a href="index.html"><img src="images/wings.png"></a>
+		</nav>
+	</header>
+	<div class="jumbotron jumbotron-fluid" style="background-image: url(images/cover.png);">
+		<br>
+		<br>
+	</div>
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col">
+				<img src="images/tenshigushio.png" class="avatar">
+				<p><strong>tenshigushio</strong> is writing stories and creating kawaii illustrations!</p>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="container-fluid">
+	  	<div class="row">
+		    <div class="col-sm-7">
+			    <div class="card">
+			     	<div class="card-body">
+			      		<h3 class="card-title">Chapter 1: The Little Girl || The Adventures of Calyn Osmond</h3>
+			      		<h5 class="card-subtitle">The Adventures of Calyn Osmond by tenshigushio</h5><hr>
+			      		<p>The little girl came down from another world. What will happen to her now?</p>
+			      		<br>
+			      		<a href="https://www.wattpad.com/1127975904-the-adventures-of-calyn-osmond-chapter-1-the" class="btn btn-dark">Read Chapter</a>
+			      	</div>
+			    </div><br>
+			    <div class="card">
+			     	<div class="card-body">
+			      		<h3 class="card-title">Chapter 2: What a sight! || The Adventures of Calyn Osmond</h3>
+			      		<h5 class="card-subtitle">The Adventures of Calyn Osmond by tenshigushio</h5><hr>
+			      		<p>The dragon knows his father! But where are they going first?</p>
+			      		<br>
+			      		<a href="https://www.wattpad.com/1128004727-the-adventures-of-calyn-osmond-chapter-2-what-a" class="btn btn-dark">Read Chapter</a>
+			      	</div>
+			    </div><br>
+	    	</div><!--end of col-sm-7-->
+	    	<div class="col-sm-5">
+		      	<div class="card">
+			  		<div class="card-body">
+				    	<div class="navbar-expand-sm">
+				    		<div class="nav tab">
+						    	<button class="tablinks" onclick="openSection(event, 'membership')">Membership</button>
+						    	<button class="tablinks" href="#support" onclick="openSection(event, 'support')">Support</button>
+							</div>
+						</div>
+				    </div>
+					<div id="membership" class="tabcontent">
+						<h5 class="card-title">Membership</h5>
+			    		<h6 class="card-subtitle mb-2 text-muted">$3</h6>
+			    		<p class="card-text">
+			    			<ul>
+				    			<li>Access to some unreleased artworks</li>
+								<li>Early access on all my artworks</li>
+								<li>Monthly Wallpapers and Icons</li>
+								<li>See my WIP sketches</li>
+								<li>Occasional Tutorials</li>
+								<li>PSD files of some of my chosen artworks to share per month</li>
+								<li>10% off my commissions</li>
+				    		</ul>
+			    		</p>
+				    	<center>
+				    		<button class="btn btn-dark" type="submit">Join</button>
+				    	</center>
+					</div>
+					<div id="support" class="tabcontent">
+						<h3 class="card-title"><strong>Buy</strong> tenshigushio a candy </h3>
+			    		<form class="form">
+				    		<div class="form">
+				    			<center>
+						    		<h2>
+						    			<label for="candyrange" class="form-label">🍬</label>
+										<input type="range" class="form-range" min="1" max="5" id="candyrange">
+									</h2>
+						    	</center><br>
+						    	<div class="mb-3">
+								  <input type="email" class="form-control" id="nameUsername" placeholder="Name or @yourtwitter (Optional)">
+								</div>
+								<div class="mb-3">
+								  <textarea class="form-control" id="message" rows="3" placeholder="Say something nice. (Optional)"></textarea>
+								</div>
+								<div class="col-12">
+								   <center><button type="submit" class="btn btn-dark">Support</button></center>
+								 </div>
+				    		</div>
+				    	</form>
+				    </div>
+				</div><!--end of card-->
+			</div><!--end of col-sm-5-->
+		</div><!--end of row-->
+	</div><!--end of container-fluid-->
+	<div class="jumbotron text-center">
+	  <p>Made by Maria Angelica Gucio, 2021</p>
+	</div>
+</body>
+</html>
